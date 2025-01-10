@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes NSK</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <h1>Galería de Imágenes</h1>
+
+    <!-- Barra de categorías -->
+    <div class="category-buttons">
+        <button class="category-btn" data-category="all">Todas</button>
+        <button class="category-btn" data-category="Accesorios">Accesorios</button>
+        <button class="category-btn" data-category="Ropa">Ropa</button>
+        <button class="category-btn" data-category="Lencería">Lencería</button>
+        <button class="category-btn" data-category="Glasses">Glasses</button>
+        <button class="category-btn" data-category="Hair">Hair</button>
+        <button class="category-btn" data-category="Skin">Skin</button>
+        <button class="category-btn" data-category="Eyelashes">Eyelashes</button>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar imagen...">
+    </div>
+
+    <!-- Galería de imágenes -->
+    <div id="gallery" class="gallery">
+        <!-- Las imágenes se cargarán aquí -->
+    </div>
+
+    <!-- Modal para ampliar imagen -->
+    <div id="modal" class="modal">
+        <img id="modalImage" src="" alt="">
+        <button class="close" onclick="closeModal()">X</button>
+    </div>
+</body>
+
+</html>
